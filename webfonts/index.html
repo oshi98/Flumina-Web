@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Flumina</title>
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="mainBackground"></div>
+
+<!-------------top bar---------------->
+<section class="alert alert-light" style="margin-bottom: 0px">
+<div class = "container">
+	<div class="row top-bar">
+		<div class="col top-bar-link">
+			<span>
+				<a href="#"><i class="fas fa-search"></i>
+				Search</a>
+			</span>
+			<span>
+				<a href="#"><i class="fas fa-envelope"></i>
+				Contact</a>
+			</span>
+			<span>
+				<a href="#"><i class="fas fa-globe-africa"></i>
+				EN</a>
+			</span>
+			<span>
+				<a href="#" class="top-bar-login"><i class="fas fa-user-circle"></i>
+				Login</a>
+			</span>
+		</div>		
+	</div>
+</div>
+</section>
+
+<!-------------top bar---------------->
+
+<!-------------nav bar---------------->
+<section class="top-nav-bar">
+<header>
+<div class="wrapper">
+		<nav>
+			<div class="menu-icon">
+				<i class="fa fa-bars fa-2x" style="color: #000;"></i>
+			</div>
+			<div class="logo">
+				<a href="index.html"><img src="img/SignetColored.svg"></a>
+			</div>
+			<div class="menu">
+				<a href="" class="burger-nav"></a>
+				<ul class="showing">
+					<li><a href="product.html">Products</a></li>
+					<li><a href="solutions.html">Solutions</a></li>
+					<li><a href="company.html">Company</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li class="five"><a href="partners.html">Partners</a></li>
+				</ul>
+			</div>
+		</nav>	
+</div>
+</header>
+</section>
+<!-------------nav bar---------------->
+
+
+
+<!------------banner section---------->
+<section class="banner">
+	<div class="inner">
+		<h1 style="padding-top: 100px;">Wertströme</h1>
+		<h1>im <span style="color: #C01466">Licht</span> mit digitalen</h1>
+		<h1>Assistenzsystemen.</h1>
+		<p>Ergebnisse am Puls der</p>
+		<p>Zeit für Kosten,</p> 
+		<p>Durchlaufzeiten und</p>
+		<p>Bestände.</p>
+	</div>	
+</section>
+<!------------banner section---------->
+
+<!------------references-------------->
+<section id="customerReferences" class="references">
+	<div id="referencesHolder">
+		<a id="refTrumpf" class="referenceImageHolder" href="#">
+			<img class="referenceImage" src="img/trumpf-logo.svg">
+		</a>
+		<a id="refSchunk" class="referenceImageHolder" href="#">
+			<img class="referenceImage" src="img/schunk-logo.png">
+		</a>
+		<a id="refIngun" class="referenceImageHolder" href="#">
+			<img class="referenceImage" src="img/ingun-logo.png">
+		</a>
+	</div>
+</section>
+<!------------references-------------->
+
+<!------------award references-------------->
+<section id="awardReferences" class="references">
+	<div id="sealsHolder">	
+		<div id="refSmig" class="sealImageHolder">
+			<img class="sealImage" src="img/SMiG.png">
+		</div>
+		<div id="refExz" class="sealImageHolder">
+			<img class="sealImage" src="img/exzellenzpreis.png">
+		</div>
+	</div>
+</section>
+<!------------award references-------------->
+
+<!------------footer------------------------->
+<footer id="footer">
+	<div class="innerContent">
+		<div class="content">
+			<div class="footer-column">
+				<a class="footer-link" href="#">Impressum</a>
+			</div>
+			<div class="footer-column">
+				<a class="footer-link" href="#">Datenschutz</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!------------footer------------------------->
+
+<script type="text/javascript">
+	//menu toggle-button
+	$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("header nav ul").toggleClass("showing");
+            });
+      });
+
+</script>
+
+</body>
+</html>
+
+

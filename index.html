@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flumina</title>
+
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-------------top bar---------------->
+    <header id="header" class="active">
+      <section class="alert alert-light" style="margin-bottom: 0px">
+        <div class="container">
+          <div class="row top-bar">
+            <div class="col top-bar-link">
+              <span>
+                <a href="#"><i class="fas fa-search"></i> Search</a>
+              </span>
+              <span>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+              </span>
+              <span>
+                <a href="#"><i class="fas fa-globe-africa"></i> EN</a>
+              </span>
+              <span>
+                <a href="login.html" class="top-bar-login"
+                  ><i class="fas fa-user-circle"></i> Login</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-------------top bar---------------->
+
+    <!-------------nav bar---------------->
+    <header id="header" class="active">
+      <section class="top-nav-bar">
+        <div class="wrapper">
+          <nav>
+            <div class="logo">
+              <a href="index.html"><img src="img/SignetColored.svg" /></a>
+            </div>
+            <div class="menu-icon">
+              <i class="fa fa-bars fa-2x" style="color: #000"></i>
+            </div>
+            <div class="menu">
+              <ul class="showing">
+                <li data-li="products" id="btn" class="open-overlay prod-btn">
+                  <a>Products</a>
+                </li>
+                <li data-li="solutions" id="btn" class="open-overlay sol-btn">
+                  <a>Solutions</a>
+                </li>
+                <li data-li="company" id="btn" class="open-overlay com-btn">
+                  <a>Company</a>
+                </li>
+                <li data-li="careers" id="btn" class="open-overlay car-btn">
+                  <a>Careers</a>
+                </li>
+                <li
+                  data-li="partners"
+                  class="five par-btn"
+                  id="btn"
+                  class="open-overlay"
+                >
+                  <a>Partners</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!-------------nav bar---------------->
+
+    <header>
+      <section id="allCategorySection" class="hidden">
+        <!-------------product category------------>
+        <div
+          id="div1"
+          class="item products overlay col-md-12"
+          style="display: none; top: 20px"
+          aria-hidden="true"
+        >
+          <div class="is-closeBtn close-overlay clsBtnPro">
+            <a>Close</a>
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="productCategoryHeader">
+            <div class="productCategoryHeaderOne">
+              <h2>Products</h2>
+            </div>
+            <div class="productCategoryHeaderTwo">
+              <h4 style="font-weight: 100">ENTIRE OVERVIEW PRODUCTION</h4>
+            </div>
+            <div class="productCategoryHeaderImg">
+              <img src="img/parquet.png" />
+            </div>
+          </div>
+          <hr class="h" />
+          <div class="productCategory" style="padding-bottom: 300px">
+            <div
+              class="childZero"
+              style="
+                align-items: left;
+                padding-right: 50px;
+                padding-top: 0px;
+                padding-bottom: 130px;
+              "
+            >
+              <p>Anwendungsfälle</p>
+              <br />
+              <p>Branchen</p>
+            </div>
+            <div class="childOne">
+              <h3>Virtual machine ></h3>
+              <p>Use the power of machines</p>
+
+              <h3>Digital assistants ></h3>
+              <p>Empower humans with algorithms & ai</p>
+
+              <h3>ETL processors ></h3>
+              <p>Connect, structure & calculate</p>
+            </div>
+            <div class="childTwo">
+              <h3>Online services ></h3>
+              <p>Enterprise analysis at the push of a button</p>
+
+              <h3>digital twins ></h3>
+              <p>Visualization of complex systems</p>
+
+              <h3>Libraries ></h3>
+              <p>Methods, Knowledge & Simulation</p>
+            </div>
+          </div>
+        </div>
+        <!-------------product category------------>
+
+        <!-------------solutions category------------>
+        <div
+          id="div2"
+          class="item solutions overlay"
+          style="display: none; top: 20px"
+          aria-hidden="true"
+        >
+          <div class="is-closeBtn close-overlay clsBtnSol">
+            <a>Close</a>
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="productCategoryHeader">
+            <div class="productCategoryHeaderOne">
+              <h2>Solutions</h2>
+            </div>
+            <div class="productCategoryHeaderTwo">
+              <h4 style="font-weight: 100">ENTIRE OVERVIEW PRODUCTION</h4>
+            </div>
+            <div class="productCategoryHeaderImg">
+              <img src="img/parquet.png" />
+            </div>
+          </div>
+          <hr class="h" />
+          <div class="productCategory" style="padding-bottom: 300px">
+            <!-- <div class="childZero" style="align-items: left; padding-right: 50px; padding-top: 0px; padding-bottom: 130px;">
+				<p>Anwendungsfälle</p>
+				<br>
+				<p>Branchen</p>
+			</div> -->
+            <div class="childOne">
+              <h3>Plattform ></h3>
+              <p>Connect, transform & visualize</p>
+
+              <h3>Smart Factory ></h3>
+              <p>Data is power</p>
+
+              <h3>Simulation ></h3>
+              <p>What would you do</p>
+            </div>
+            <div class="childTwo">
+              <h3>Value Stream Analysis ></h3>
+              <p>At the push of a button</p>
+
+              <h3>Cockpit ></h3>
+              <p>Always see everything</p>
+
+              <h3>KPI system ></h3>
+              <p>All your key performance indicators</p>
+            </div>
+          </div>
+        </div>
+        <!-------------solutions category------------>
+
+        <!-------------company category------------>
+        <div
+          id="div3"
+          class="item company overlay"
+          style="display: none; top: 20px"
+          aria-hidden="true"
+        >
+          <div class="is-closeBtn close-overlay clsBtnCom">
+            <a>Close</a>
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="productCategoryHeader">
+            <div class="productCategoryHeaderOne">
+              <h2>Company</h2>
+            </div>
+            <div class="productCategoryHeaderTwo">
+              <h4 style="font-weight: 100">ENTIRE OVERVIEW PRODUCTION</h4>
+            </div>
+            <div class="productCategoryHeaderImg">
+              <img src="img/parquet.png" />
+            </div>
+          </div>
+          <hr class="h" />
+          <div class="productCategory" style="padding-bottom: 300px">
+            <!-- <div class="childZero" style="align-items: left; padding-right: 50px; padding-top: 0px; padding-bottom: 130px;">
+				<p>Anwendungsfälle</p>
+				<br>
+				<p>Branchen</p>
+			</div> -->
+            <div class="childOne">
+              <h3>Company profile ></h3>
+              <p>About us and what we do.</p>
+
+              <h3>Now ></h3>
+              <p>Who are we today</p>
+
+              <h3>Milestones ></h3>
+              <p>Experience and sucess</p>
+            </div>
+            <div class="childTwo">
+              <h3>Coming ></h3>
+              <p>Where we are coming from</p>
+
+              <h3>Where to ></h3>
+              <p>Who will we be</p>
+
+              <h3>Values ></h3>
+              <p>Be yourself</p>
+            </div>
+          </div>
+        </div>
+        <!-------------company category------------>
+
+        <!-------------careers category------------>
+        <div
+          id="div4"
+          class="item careers overlay"
+          style="display: none; top: 20px"
+          aria-hidden="true"
+        >
+          <div class="is-closeBtn close-overlay clsBtnCar">
+            <a>Close</a>
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="productCategoryHeader">
+            <div class="productCategoryHeaderOne">
+              <h2>Careers</h2>
+            </div>
+            <div class="productCategoryHeaderTwo">
+              <h4 style="font-weight: 100">ENTIRE OVERVIEW PRODUCTION</h4>
+            </div>
+            <div class="productCategoryHeaderImg">
+              <img src="img/parquet.png" />
+            </div>
+          </div>
+          <hr class="h" />
+          <div class="productCategory" style="padding-bottom: 300px">
+            <!-- <div class="childZero" style="align-items: left; padding-right: 50px; padding-top: 0px; padding-bottom: 130px;">
+				<p>Anwendungsfälle</p>
+				<br>
+				<p>Branchen</p>
+			</div> -->
+            <div class="childOne">
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+            </div>
+            <div class="childTwo">
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+        <!-------------careers category------------>
+
+        <!-------------Partners category------------>
+        <div
+          id="div5"
+          class="item partners overlay"
+          style="display: none; top: 20px"
+          aria-hidden="true"
+        >
+          <div class="is-closeBtn close-overlay clsBtnPar">
+            <a>Close</a>
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div
+            style="background-color: transparent"
+            class="productCategoryHeader"
+          >
+            <div class="productCategoryHeaderOne">
+              <h2>Partners</h2>
+            </div>
+            <div class="productCategoryHeaderTwo">
+              <h4 style="font-weight: 100">ENTIRE OVERVIEW PRODUCTION</h4>
+            </div>
+            <div class="productCategoryHeaderImg">
+              <img src="img/parquet.png" />
+            </div>
+          </div>
+          <hr class="h" />
+          <div class="productCategory" style="padding-bottom: 300px">
+            <!-- <div class="childZero" style="align-items: left; padding-right: 50px; padding-top: 0px; padding-bottom: 130px;">
+				<p>Anwendungsfälle</p>
+				<br>
+				<p>Branchen</p>
+			</div> -->
+            <div class="childOne">
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+            </div>
+            <div class="childTwo">
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+
+              <h3>Item ></h3>
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+        <!-------------Partners category------------>
+      </section>
+    </header>
+
+    <div class="mainBackgroundHolder" style="height: 900vh; width: 100vw; overflow: hidden; position: absolute; top: 0;"></div>
+
+    <div id="mainBackground" class="mainBackground"></div>
+    <!-- Animation -->
+    <canvas
+      id="particleCanvas"
+      class="particleCanvas"
+      width="1848"
+      height="949"
+    ></canvas>
+
+    <!------------banner section---------->
+    <section class="banner">
+      <div class="inner">
+        <h1 style="padding-top: 100px">Wertströme</h1>
+        <h1>im <span style="color: #c01466">Licht</span> mit digitalen</h1>
+        <h1>Assistenzsystemen.</h1>
+        <p>Ergebnisse am Puls der</p>
+        <p>Zeit für Kosten,</p>
+        <p>Durchlaufzeiten und</p>
+        <p>Bestände.</p>
+      </div>
+    </section>
+    <!------------banner section---------->
+
+    <!------------references-------------->
+    <section id="customerReferences" class="references">
+      <div id="referencesHolder">
+        <a id="refTrumpf" class="referenceImageHolder" href="#">
+          <img class="referenceImage" src="img/trumpf-logo.svg" />
+        </a>
+        <a id="refSchunk" class="referenceImageHolder" href="#">
+          <img class="referenceImage" src="img/schunk-logo.png" />
+        </a>
+        <a id="refIngun" class="referenceImageHolder" href="#">
+          <img class="referenceImage" src="img/ingun-logo.png" />
+        </a>
+      </div>
+    </section>
+    <!------------references-------------->
+
+    <!------------award references-------------->
+    <section id="awardReferences" class="references">
+      <div id="sealsHolder">
+        <div id="refSmig" class="sealImageHolder">
+          <img class="sealImage" src="img/SMiG.png" />
+        </div>
+        <div id="refExz" class="sealImageHolder">
+          <img class="sealImage" src="img/exzellenzpreis.png" />
+        </div>
+      </div>
+    </section>
+    <!------------award references-------------->
+
+    <!------------footer------------------------->
+    <footer id="footer" class="footer">
+      <div class="innerContent">
+        <div class="content">
+          <div class="footer-column">
+            <a class="footer-link" href="#">Impressum</a>
+          </div>
+          <div class="footer-column">
+            <a class="footer-link" href="#">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------footer------------------------->
+    <script src="js/main.js"></script>
+    <script src="js/actions.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,491 @@
+/* MEDIA QUERIES */
+@font-face {
+	font-family: myFirstFont;
+	src: url(../fonts/Ubuntu-Th.ttf);
+}
+
+@media screen and (max-width: 1300px){
+    .logo img{
+        left: 50px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1135px){
+    html, body{
+        overflow-y: scroll;
+    }
+    .logo img{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+        right: 40px;
+        left: 0px;
+        margin-right: 0px;
+    }
+    .top-bar-link{
+        text-align: center;
+    }
+    nav ul{
+        margin-top: 90px;
+    }
+    #mainBackground{
+        top: 450px;
+    }
+    .banner{
+        padding-top: 400px;
+    }
+
+    /*--------customer references-------------*/
+    #customerReferences{
+        top: 500px;
+        margin-top: 20vh;
+        padding-top: 0px;
+    }
+    .references{
+        padding: 15vmin 1vmin;
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+        max-height: 30vh;
+    }
+    #referencesHolder{
+        display: grid;
+        grid-template-columns: 13vw 13vw 13vw;
+        height: 13vw;
+        grid-column-gap: 1vw;
+        justify-content: center;
+    }
+    /*--------award references----------------*/
+    #awardReferences{
+        bottom: 0vmin;
+        padding: 0 1vmin;
+        top: 750px;
+    }
+
+    #sealsHolder{
+        top: 50px;
+        position: absolute;
+        display: grid;
+        grid-template-columns: 43vw 12vw 12vw;
+        height: 9vw;
+        grid-column-gap: 3vw;
+        justify-content: center;
+        bottom: 5vh;
+        /* pointer-events: none; */
+    }
+
+    .sealImageHolder{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sealImage{
+        max-height: 120%;
+        max-width: 120%;
+    }
+
+    /*--------------footer--------------------*/
+    #footer .content{
+        justify-content: center;
+        grid-column-gap: 2vw;
+        grid-template-columns: 12vw 9vw 0vw;
+        margin-top: 230px;
+        margin-left: 55px;
+    }
+
+    #div1 {
+        position: absolute;
+        /* display: none; */
+        background-color: #fff;
+        width: 100%;
+        z-index: 500;
+        justify-content: center;
+        bottom: 0;
+        top: 60px;
+        overflow: hidden;
+      }
+
+
+}
+
+/* tablet */
+@media screen and (max-width: 768px){
+    html, body{
+        overflow-y: scroll;
+    }
+.body{
+    width: 768px;
+    overflow-x: hidden;
+}
+
+.logo img{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    right: 40px;
+    left: 0px;
+    margin-right: 0px;
+}
+
+.menu{
+    margin-top: 100px;
+}
+
+.menu ul{
+    padding-right: 0px;
+}
+
+.menu ul li{
+    padding-left: 0px;
+}
+
+.five{
+    padding-right: 0px;
+}
+
+#mainBackground{
+    position: absolute; 
+    min-width: 75vmax;
+    min-height: 75vmax;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(transparent,rgba(175, 222, 237, 1),rgb(255, 255, 255),transparent, transparent, transparent, transparent);
+	animation: lightUp 3s cubic-bezier(0, 12, 0.6, 0.91) forwards;
+}
+
+@keyframes lightUp {
+	0% {
+	  height: 0;
+	  width: 0;
+	}
+	100% {
+	  height: 150vmax;
+	  width: 150vmax;
+	}
+}
+
+.top-bar .top-bar-link{
+    text-align: center;
+}
+
+/* ----------------banner------------------*/
+
+.inner{
+    top: 200px;
+    right: 120px;
+    left: 0px;
+    width: 100%;
+}
+
+/*--------customer references-------------*/
+#customerReferences{
+	margin-top: 20vh;
+}
+.references{
+	padding: 15vmin 1vmin;
+	position: absolute;
+	width: 100%;
+	pointer-events: none;
+	max-height: 30vh;
+}
+#referencesHolder{
+	display: grid;
+	grid-template-columns: 13vw 13vw 13vw;
+	height: 13vw;
+	grid-column-gap: 1vw;
+	justify-content: center;
+}
+/*--------award references----------------*/
+#awardReferences{
+	bottom: 0vmin;
+	padding: 0 1vmin;
+}
+
+#sealsHolder{
+    top: 50px;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 43vw 12vw 12vw;
+	height: 9vw;
+	grid-column-gap: 3vw;
+	justify-content: center;
+	bottom: 5vh;
+	/* pointer-events: none; */
+}
+
+.sealImageHolder{
+    width: 100%;
+    height: 100%;
+}
+
+.sealImage{
+    max-height: 120%;
+	max-width: 120%;
+}
+
+/*--------------footer--------------------*/
+#footer .content{
+    justify-content: center;
+    grid-column-gap: 2vw;
+    grid-template-columns: 12vw 9vw 0vw;
+    margin-top: 200px;
+    margin-left: 55px;
+}
+
+}
+
+@media screen and (max-width: 480px){
+html, body{
+    overflow-y: scroll;
+}
+.menu{
+    margin-top: 0px;
+}
+.menu-icon{
+    display: block;
+    margin-top: 110px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    background: transparent;
+}
+header .wrapper{
+    width: 100%;
+    padding: 0px;
+} 
+header nav ul{
+    overflow: hidden;
+    background: #fff;
+    //height: 0;
+}
+header nav ul.showing{
+    height: auto;
+}
+header nav ul li{
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.five{
+    padding-right: 24px;
+}
+header nav ul li a{
+    color: #000;
+} 
+.top-bar span{
+    padding-left: 0px;
+}
+.container .top-bar-link{
+    padding-right: 0px;
+}
+nav ul {
+    max-height: 0px;
+    background: #fff;
+}
+.showing {
+    max-height: 34em;
+    margin-top: 0px;
+}
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+nav ul li a{
+    color: #fff;
+}
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+	font-weight: normal;
+    font-family: myFirstFont;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	color: #C01466;
+}
+.menu-icon {
+    display: block;
+}
+.top-bar-login{
+    padding-right: 0px;
+} 
+.inner{
+    top: 200px;
+    right: 120px;
+    left: 0px;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+nav ul li.active a::after{
+    width: calc(40%);
+}
+nav ul li a:hover::after{
+    width: calc(40%);
+}
+#customerReferences{
+    top: 550px;
+}
+#referencesHolder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.referenceImageHolder{
+    width: 154px;
+    height: 154px;
+}
+#awardReferences{
+    top: 1000px;
+}
+#footer .content{
+    margin-top: 600px;
+    grid-column-gap: 10vw;
+    grid-template-columns: 15vw 15vw 0vw;
+    font-size: 4vmin;
+}
+#sealsHolder{
+    display: flex;
+    flex-wrap: wrap;
+    left: 0px;
+    right: 210px;
+    height: 20vw;
+}
+#refExz{
+    top: 50px;
+}
+
+#div1, #div2, #div3, #div4, #div5{
+    overflow-y: scroll;
+    overflow-x: visible;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    top: 240px;
+}
+
+.productCategory{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+.childOne, .childTwo{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+.productCategoryHeaderOne{
+    margin-right: 150px;
+}
+.productCategoryHeaderTwo{
+    margin-right: 0px;
+    position: absolute;
+    top: 710px;
+}
+.productCategoryHeaderImg{
+    position: absolute;
+    top: 700px;
+    left: 300px;
+}
+
+
+}
+
+@media screen and (max-width: 419px){
+    #customerReferences{
+        top: 600px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #sealsHolder{
+        right: 170px;
+    }
+}
+
+@media screen and (max-width: 335px){
+    #sealsHolder{
+        top: 250px;
+    }
+    #refSchunk{
+        top: 10px;
+    }
+    #refIngun{
+        top: 20px;
+    }
+    #footer{
+        top: 900px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    .h{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    .is-closeBtn{
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1135px){
+
+    .products, .solutions, .company, .careers, .partners{
+        top: 210px;
+    }
+    .productCategory{
+        border-bottom-width: 100px;
+        padding-bottom: 1000px;
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 927px){
+
+    .products, .solutions, .company, .careers, .partners{
+        top: 270px;
+    }
+    .productCategory{
+        border-bottom-width: 100px;
+        padding-bottom: 1000px;
+        padding-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .products, .solutions, .company, .careers, .partners{
+        top: 220px;
+    }
+    .productCategory{
+        border-bottom-width: 100px;
+        padding-bottom: 1000px;
+        padding-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 646px){
+
+    .products, .solutions, .company, .careers, .partners{
+        top: 280px;
+    }
+    .productCategory{
+        border-bottom-width: 100px;
+        padding-bottom: 1000px;
+        padding-top: 200px;
+    }
+
+}
